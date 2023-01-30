@@ -1,6 +1,10 @@
 html,
 body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  width :100%;
+  height: 100vh;
+ 
 }
 
 
@@ -23,21 +27,24 @@ body {
   z-index: 2;
 }
 
-.first{
+.first {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.second
-{
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    border-radius: 0;
+.second {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-radius: 0;
 }
 
-.third{
+.text-center {
+  background-image: linear-gradient(140deg, #FFCEFE, #AEE2FF, #D9ACF5, #AAE3E2, #FDEBED);
+}
+
+.third {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -45,79 +52,80 @@ body {
 
 /* styling for success page */
 
-  .success
-  {
+.success {
 
-  background-image:  url("/image/successpic.png");
+  background-image: url("/image/successpic.png");
 
-  background-size: contain  ;
-  background-repeat:  repeat;
+  background-size: contain;
+  /* background-repeat: repeat; */
   background-attachment: fixed;
   background-position: center;
-  color:maroon;
-  }
+  color: maroon;
+}
 
-  .success-container
-  {
+.success-container {
   width: 50%;
   height: 50%;
-  margin :auto auto;
+  margin: auto auto;
   text-align: center;
-  }
+}
 
-  .success-container h1{
-  margin :5% auto 7%;
+.success-container h1 {
+  margin: 5% auto 7%;
 
-  }
+}
 
-  .success-container button
-  {
-  border: rgb(62, 136, 168) solid;
+.success-container p {
+  font-weight: bold;
+}
+
+.success-container button {
+
+  font-weight: bolder;
+  color: maroon;
+  border: none;
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 15px 25px;
   font-size: medium;
   margin: 3% auto;
-  }
-  .success-container button:hover
-  {
-    background-color:#c1d784;
-  }
+  background-image: linear-gradient(225deg, #d7ded4, #e0e74b, #8cc29e, #55cdcd, #3a4130);
+}
+
 
 /* styling for failure page */
 
-.failure{
+.failure {
 
   background-color: #d2e4ed;
   display: flex;
   text-align: center;
-  
-  }
-  
-  .failure-container
-  { 
-  width: 100%; 
-  margin : auto;
-  }
-  
-  .failure-container h1{
-  margin :-10% auto 3%;
-  }
+  background-image: linear-gradient(140deg, #3be0a5, #bcc0ea, #bdd59e, #8e8cdb);
 
-  .failure-container p
-  {
-      font-size: x-large; 
-  } 
- 
-  .failure-container button
-  {
+}
+
+.failure-container {
+  width: 100%;
+  margin: auto;
+
+
+}
+
+.failure-container h1 {
+  margin: -10% auto 3%;
+}
+
+.failure-container p {
+  font-size: x-large;
+}
+
+.failure-container button {
   border: rgb(62, 136, 168) solid;
-   border-radius: 10px;
-   padding: 10px 20px;
-   font-size: large;
-   margin: 3% auto;
-  }
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: large;
+  margin: 3% auto;
+}
 
-  .failure-container button:hover
-  {
-      background-color:#74c6e3;
-  }
+.failure-container button:hover {
+  background-color: #74c6e3;
+}
